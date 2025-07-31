@@ -28,13 +28,23 @@
 
     ul {
       line-height: 2em; /* Espaçamento entre itens */
+      list-style: none; /* Remove as bolinhas padrão */
+      padding-left: 0;
+      display: flex;
+      justify-content: space-around;
     }
 
-    img.hobby {
-      width: 300px;
-      border-radius: 10px;
-      display: block;
-      margin-top: 10px;
+    ul li {
+      text-align: center;
+      width: 150px;
+      font-size: 16px;
+    }
+
+    ul li img {
+      margin-top: 8px;
+      border-radius: 8px;
+      width: 120px;
+      height: auto;
     }
 
     table {
@@ -72,6 +82,7 @@
       color: #ffcc00;
       font-weight: bold;
       font-size: 18px;
+      text-align: center;
     }
 
     button {
@@ -84,6 +95,9 @@
       cursor: pointer;
       font-family: "Comic Sans MS", cursive;
       font-size: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     button:hover {
@@ -98,12 +112,19 @@
   <p>Meu nome é Fabricio, tenho 32 anos, sou de Curitiba e sou apaixonado por tecnologia, música e Motos, principalmente Motos. Estou cursando Analise e desenvolvimento de Sistemas e gosto muito de aprender coisas novas na área de desenvolvimento.</p>
 
   <ul>
-    <li>Tocar guitarra</li>
-    <li>Jogar futebol</li>
-    <li>Assistir filmes</li>
+    <li>
+      Tocar guitarra<br />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gibson_Les_Paul_1947_R0_Worn_Glossy_4-3_crop.jpg/120px-Gibson_Les_Paul_1947_R0_Worn_Glossy_4-3_crop.jpg" alt="Guitarra Gibson Les Paul 1947" />
+    </li>
+    <li>
+      Jogar futebol<br />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adidas_Jabulani_2010_football_ball.jpg/120px-Adidas_Jabulani_2010_football_ball.jpg" alt="Bola Jabulani Copa 2010" />
+    </li>
+    <li>
+      Assistir filmes<br />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Harry_Potter_wordmark.svg/120px-Harry_Potter_wordmark.svg.png" alt="Logo Harry Potter" />
+    </li>
   </ul>
-
-  <img src="https://musicshaker.com.ar/wp-content/uploads/2022/06/D_730279-MLA46244490306_062021-O-256x256.jpg" alt="Guitarra" class="hobby">
 
   <table>
     <tr>

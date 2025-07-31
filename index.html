@@ -39,15 +39,18 @@
 
     ul li {
       text-align: center;
-      width: 150px;
+      width: 100px;
       font-size: 16px;
     }
 
     ul li img {
       margin-top: 8px;
       border-radius: 8px;
-      max-width: 70px;
+      max-width: 50px;
       height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     table {
@@ -118,15 +121,15 @@
 
   <ul>
     <li>
-      Tocar guitarra<br />
+      Guitarra<br />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gibson_Les_Paul_1947_R0_Worn_Glossy_4-3_crop.jpg/120px-Gibson_Les_Paul_1947_R0_Worn_Glossy_4-3_crop.jpg" alt="Guitarra Gibson Les Paul 1947" />
     </li>
     <li>
-      Jogar futebol<br />
+      Bola<br />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adidas_Jabulani_2010_football_ball.jpg/120px-Adidas_Jabulani_2010_football_ball.jpg" alt="Bola Jabulani Copa 2010" />
     </li>
     <li>
-      Assistir filmes<br />
+      Filme<br />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Harry_Potter_wordmark.svg/120px-Harry_Potter_wordmark.svg.png" alt="Logo Harry Potter" />
     </li>
   </ul>
@@ -148,21 +151,18 @@
 
   <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polonia</a>
 
-  <!-- Áudio do som da moto -->
-  <audio id="somMoto" src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3"></audio>
-
   <button id="botaoMensagem">Clique para ver uma mensagem!</button>
   <div id="mensagem"></div>
+
+  <!-- Música de rock instrumental livre tocando ao carregar a página -->
+  <audio id="musicaFundo" src="https://cdn.pixabay.com/download/audio/2022/03/28/audio_0f9371d8f4.mp3?filename=rock-guitar-loop-1274.mp3" autoplay loop></audio>
 
   <script>
     const botao = document.getElementById('botaoMensagem');
     const mensagem = document.getElementById('mensagem');
-    const somMoto = document.getElementById('somMoto');
 
     botao.addEventListener('click', () => {
       mensagem.innerText = "Quede-lhe o Harlão?";
-      somMoto.currentTime = 0;
-      somMoto.play();
     });
   </script>
 

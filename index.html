@@ -39,10 +39,27 @@
     ul li {
       text-align: center;
       width: 80px;
-      font-size: 24px; /* emoji maior */
+      font-size: 24px;
       color: white;
-      text-shadow: 1px 1px 3px #000;
-      line-height: 1.5;
+      text-shadow: 1px 1px 3px #90ee90; /* sombra verde clara */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    ul li .emoji {
+      display: inline-flex;
+      font-size: 48px;
+      border-radius: 15px;
+      padding: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 8px #004400;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 70px;
+      height: 70px;
+      justify-content: center;
+      align-items: center;
     }
 
     table {
@@ -116,9 +133,18 @@
   <p>Oi, eu sou o Fabricio, mas pode me chamar de Bruxo! Tenho 32 anos e sou de Curitiba, uma cidade cheia de vida e paixão — assim como eu. Sou fissurado em tecnologia, música boa e, claro, motos (principalmente elas!). Além disso, curto carros, jogos eletrônicos e aquele rock clássico que nunca sai de moda. Estou cursando Análise e Desenvolvimento de Sistemas, sempre na pegada de aprender e explorar coisas novas no mundo da programação e desenvolvimento. Se tiver papo sobre qualquer uma dessas paixões, já sabe onde me encontrar!</p>
 
   <ul>
-    <li>🎸<br />Guitarra</li>
-    <li>⚽<br />Bola</li>
-    <li>🎬<br />Filme</li>
+    <li>
+      <span class="emoji">🎸</span>
+      Guitarra
+    </li>
+    <li>
+      <span class="emoji">⚽️</span>
+      Bola
+    </li>
+    <li>
+      <span class="emoji">🎬</span>
+      Filme
+    </li>
   </ul>
 
   <table>
@@ -146,7 +172,7 @@
     const mensagem = document.getElementById('mensagem');
 
     botao.addEventListener('click', () => {
-      mensagem.innerText = "Quede-lhe o Super Meteor?";
+      mensagem.innerText = "Cadê a Super Meteor?";
     });
   </script>
 

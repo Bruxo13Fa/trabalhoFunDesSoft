@@ -47,8 +47,9 @@
       display: block;
       margin: 0 auto 5px auto;
       width: 50px;
-      height: auto;
+      height: 50px;
       border-radius: 5px;
+      object-fit: contain;
     }
 
     table {
@@ -130,39 +131,3 @@
       <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Harry_Potter_wordmark.svg" alt="Filme" />
       Filme
     </li>
-  </ul>
-
-  <table>
-    <tr>
-      <td>Polônia</td>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/64px-Flag_of_Poland.svg.png" alt="Bandeira da Polônia" width="70"></td>
-    </tr>
-    <tr>
-      <td>Nova Zelândia</td>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/64px-Flag_of_New_Zealand.svg.png" alt="Bandeira da Nova Zelândia" width="70"></td>
-    </tr>
-    <tr>
-      <td>Itália</td>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/64px-Flag_of_Italy.svg.png" alt="Bandeira da Itália" width="70"></td>
-    </tr>
-  </table>
-
-  <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polonia</a>
-
-  <button id="botaoMensagem">Clique para ver uma mensagem!</button>
-  <div id="mensagem"></div>
-
-  <!-- Música de rock instrumental livre tocando ao carregar a página -->
-  <audio id="musicaFundo" src="https://cdn.pixabay.com/download/audio/2022/03/28/audio_0f9371d8f4.mp3?filename=rock-guitar-loop-1274.mp3" autoplay loop></audio>
-
-  <script>
-    const botao = document.getElementById('botaoMensagem');
-    const mensagem = document.getElementById('mensagem');
-
-    botao.addEventListener('click', () => {
-      mensagem.innerText = "Quede-lhe o Harlão?";
-    });
-  </script>
-
-</body>
-</html>

@@ -38,14 +38,17 @@
 
     ul li {
       text-align: center;
+      width: 80px;
       font-size: 16px;
+      color: white;
     }
 
     ul li img {
       display: block;
-      margin: 5px auto;
-      width: 70px;
+      margin: 0 auto 5px auto;
+      width: 50px;
       height: auto;
+      border-radius: 5px;
     }
 
     table {
@@ -112,20 +115,20 @@
 
   <h1>Fabricio "Bruxo" Levandoski</h1>
 
-  <p>Meu nome é Fabricio, tenho 32 anos, sou de Curitiba e sou apaixonado por tecnologia, música e Motos, principalmente Motos. Estou cursando Análise e Desenvolvimento de Sistemas e gosto muito de aprender coisas novas na área de desenvolvimento.</p>
+  <p>Meu nome é Fabricio, tenho 32 anos, sou de Curitiba e sou apaixonado por tecnologia, música e Motos, principalmente Motos. Estou cursando Analise e desenvolvimento de Sistemas e gosto muito de aprender coisas novas na área de desenvolvimento.</p>
 
   <ul>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Electric_guitar_icon.png/70px-Electric_guitar_icon.png" alt="Guitarra">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Guitarra_el%C3%A9ctrica_01.png/50px-Guitarra_el%C3%A9ctrica_01.png" alt="Guitarra" />
       Guitarra
     </li>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" alt="Bola">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Soccer_ball_icon.svg/50px-Soccer_ball_icon.svg.png" alt="Bola" />
       Bola
     </li>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Harry_Potter_initials_HP_logo.svg/70px-Harry_Potter_initials_HP_logo.svg.png" alt="Filme">
-      Filme
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Harry_Potter_wordmark.svg" alt="HP" width="50" />
+      HP
     </li>
   </ul>
 
@@ -144,7 +147,7 @@
     </tr>
   </table>
 
-  <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polônia</a>
+  <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polonia</a>
 
   <button id="botaoMensagem">Clique para ver uma mensagem!</button>
   <div id="mensagem"></div>
@@ -154,7 +157,7 @@
     const mensagem = document.getElementById('mensagem');
 
     botao.addEventListener('click', () => {
-      mensagem.innerText = "Quede-lhe o Harlão?";
+      mensagem.innerText = "Quede-lhe a Super Meteor?";
     });
   </script>
 

@@ -12,14 +12,8 @@
       background-repeat: no-repeat;
       background-position: center center;
       color: white; /* Para o texto aparecer bem em cima do fundo */
-    }
-  </style>
-</head>
-  <style>
-    body {
-      background-color: #f0f8ff; /* Cor de fundo suave */
-      font-family: Comic sans, sans-serif;
       margin: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Para melhorar contraste do texto */
     }
 
     h1 {
@@ -47,6 +41,8 @@
       border-collapse: collapse;
       width: 100%;
       margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
     }
 
     table, th, td {
@@ -72,8 +68,10 @@
 
     #mensagem {
       margin-top: 10px;
-      font-style: comic sans;
-      color: #444;
+      font-family: "Comic Sans MS", cursive;
+      color: #ffcc00;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     button {
@@ -84,6 +82,8 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 16px;
     }
 
     button:hover {
@@ -122,24 +122,22 @@
 
   <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polonia</a>
 
+  <!-- Áudio do som da moto (sem controles visíveis) -->
+  <audio id="somMoto">
+    <source src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Botão que mostra mensagem e toca som -->
   <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
   <div id="mensagem"></div>
 
   <script>
     function mostrarMensagem() {
       document.getElementById('mensagem').innerText = "Quede-lhe o Harlão?";
-      <audio id="somMoto">
-  <source src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3" type="audio/mpeg" />
-</audio>
-
-<button onclick="tocarSom()">Clique para ouvir o som da moto</button>
-
-<script>
-  function tocarSom() {
-    const som = document.getElementById('somMoto');
-    som.play();
-  }
-</script>
+      // Tocar o som da moto
+      const som = document.getElementById('somMoto');
+      som.play();
     }
   </script>
 

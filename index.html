@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <title>Bruxo RoomPage</title>
 
+  <!-- Link FontAwesome CDN para ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pbX8e6aGfYHT1vUx9Nk4xL91cfI6uzHG9ERdc0VULF6WQ6zKrALuQH2Mw3+1xAnk6zB9UQJdkaDo5bX7g3+8Wg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <style>
     body {
       font-family: "Comic Sans MS", cursive, sans-serif;
@@ -44,14 +53,14 @@
       text-shadow: 1px 1px 3px #000;
     }
 
-    ul li img {
-      display: block;
-      margin: 0 auto 5px auto;
-      width: 40px;
-      height: 40px;
+    ul li i {
+      font-size: 40px;
       border-radius: 10px;
       border: 2px solid white;
+      padding: 10px;
       box-shadow: 0 0 8px #000;
+      margin-bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.4);
     }
 
     table {
@@ -126,15 +135,15 @@
 
   <ul>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Electric_guitar_icon.svg/48px-Electric_guitar_icon.svg.png" alt="Guitarra" />
+      <i class="fa-solid fa-guitar"></i>
       Guitarra
     </li>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Soccer_ball_icon.svg/48px-Soccer_ball_icon.svg.png" alt="Bola" />
+      <i class="fa-solid fa-futbol"></i>
       Bola
     </li>
     <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Harry_Potter_Logo.svg/48px-Harry_Potter_Logo.svg.png" alt="Filme" />
+      <i class="fa-solid fa-clapperboard"></i>
       Filme
     </li>
   </ul>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página Pessoal</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* Cor de fundo suave */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3366cc; /* Cor diferente */
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    ul {
+      line-height: 2em; /* Espaçamento entre itens */
+    }
+
+    img.hobby {
+      width: 300px;
+      border-radius: 10px;
+      display: block;
+      margin-top: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .link-interesse {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .link-interesse:hover {
+      color: #ff6600; /* Muda de cor ao passar o mouse */
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-style: italic;
+      color: #444;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3366cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #224499;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>João da Silva</h1>
+
+  <p>Meu nome é Fabricio, tenho 32 anos, sou de Curitiba e sou apaixonado por tecnologia, música e Motos, principalmente Motos. Estou cursando Analise e desenvolvimento de Sistemas e gosto muito de aprender coisas novas na área de desenvolvimento.</p>
+
+  <ul>
+    <li>Tocar guitarra</li>
+    <li>Jogar futebol</li>
+    <li>Assistir filmes</li>
+  </ul>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Guitar_2.jpg/640px-Guitar_2.jpg" alt="Guitarra" class="hobby">
+
+  <table>
+    <tr>
+      <td>Japão</td>
+      <td><img src="https://flagcdn.com/w320/jp.png" alt="Bandeira do Japão" width="100"></td>
+    </tr>
+    <tr>
+      <td>Republica Democratica do Congo</td>
+      <td><img src="https://flagcdn.com/w320/ca.png" alt="Bandeira do Republica Democratica do Congo" width="100"></td>
+    </tr>
+    <tr>
+      <td>Butão</td>
+      <td><img src="https://flagcdn.com/w320/it.png" alt="Bandeira da Butão" width="100"></td>
+    </tr>
+  </table>
+
+  <a href="https://www.tecmundo.com.br" target="_blank" class="link-interesse">Visite o TecMundo</a>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerText = "Bem-vindo à minha página! Nunca pare de pilotar!!";
+    }
+  </script>
+
+</body>
+</html>

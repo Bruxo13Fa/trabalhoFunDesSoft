@@ -8,17 +8,19 @@
     body {
       font-family: "Comic Sans MS", "Comic Sans", cursive;
       background-image: url('https://imagens.net.br/wp-content/uploads/2023/06/Bandeira-do-Coritiba-O-Simbolo-de-Orgulho-e-Paixao-que-Une-uma-Nacao-Alviverde11-1024x640.jpg');
-      background-size: cover; /* Faz a imagem cobrir toda a tela */
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      color: white; /* Para o texto aparecer bem em cima do fundo */
+      color: white;
       margin: 20px;
-      background-color: rgba(0, 0, 0, 0.5); /* Para melhorar contraste do texto */
+      /* Um filtro para escurecer o fundo e melhorar a leitura */
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: multiply;
     }
 
     h1 {
       text-align: center;
-      color: #3366cc; /* Cor diferente */
+      color: #3366cc;
     }
 
     p {
@@ -27,11 +29,13 @@
     }
 
     ul {
-      line-height: 2em; /* Espaçamento entre itens */
-      list-style: none; /* Remove as bolinhas padrão */
+      line-height: 2em;
+      list-style: none;
       padding-left: 0;
       display: flex;
       justify-content: space-around;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     ul li {
@@ -43,7 +47,7 @@
     ul li img {
       margin-top: 8px;
       border-radius: 8px;
-      width: 120px;
+      width: 80px;
       height: auto;
     }
 
@@ -70,14 +74,16 @@
       font-weight: bold;
       color: #0066cc;
       text-decoration: none;
+      text-align: center;
+      font-size: 18px;
     }
 
     .link-interesse:hover {
-      color: #ff6600; /* Muda de cor ao passar o mouse */
+      color: #ff6600;
     }
 
     #mensagem {
-      margin-top: 10px;
+      margin-top: 15px;
       font-family: "Comic Sans MS", cursive;
       color: #ffcc00;
       font-weight: bold;
@@ -143,23 +149,22 @@
 
   <a href="https://wyborcza.pl/0,0.html" target="_blank" class="link-interesse">Visite a Polonia</a>
 
-  <!-- Áudio do som da moto (sem controles visíveis) -->
-  <audio id="somMoto">
-    <source src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3" type="audio/mpeg" />
-    Seu navegador não suporta áudio.
-  </audio>
+  <!-- Áudio do som da moto -->
+  <audio id="somMoto" src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3"></audio>
 
-  <!-- Botão que mostra mensagem e toca som -->
-  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <button id="botaoMensagem">Clique para ver uma mensagem!</button>
   <div id="mensagem"></div>
 
   <script>
-    function mostrarMensagem() {
-      document.getElementById('mensagem').innerText = "Quede-lhe o Harlão?";
-      // Tocar o som da moto
-      const som = document.getElementById('somMoto');
-      som.play();
-    }
+    const botao = document.getElementById('botaoMensagem');
+    const mensagem = document.getElementById('mensagem');
+    const somMoto = document.getElementById('somMoto');
+
+    botao.addEventListener('click', () => {
+      mensagem.innerText = "Quede-lhe o Harlão?";
+      somMoto.currentTime = 0;
+      somMoto.play();
+    });
   </script>
 
 </body>

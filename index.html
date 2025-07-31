@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Bruxo RoomPage</title>
-  
-  <audio id="musicaFundo" autoplay loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
 
   <style>
     body {
@@ -132,6 +128,18 @@
   <script>
     function mostrarMensagem() {
       document.getElementById('mensagem').innerText = "Quede-lhe o Harlão?";
+      <audio id="somMoto">
+  <source src="https://www.soundjay.com/motorcycle/sounds/motorcycle-start-1.mp3" type="audio/mpeg" />
+</audio>
+
+<button onclick="tocarSom()">Clique para ouvir o som da moto</button>
+
+<script>
+  function tocarSom() {
+    const som = document.getElementById('somMoto');
+    som.play();
+  }
+</script>
     }
   </script>
 
